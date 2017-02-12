@@ -1,0 +1,7 @@
+pyramid
+pyramid_chameleon
+bcrypt
+sqlalchemy
+pyramid_tm
+zope.sqlalchemy
+requests

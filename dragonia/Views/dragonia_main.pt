@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dragonia</title>
+</head>
+<body>
+<h1>Choose your Dragon</h1>
+<p>${dragon}</p>
+<button type="button">Run Game</button>
+</body>
+</html>

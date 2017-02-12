@@ -1,0 +1,6 @@
+dragonia.egg-info/PKG-INFO
+dragonia.egg-info/SOURCES.txt
+dragonia.egg-info/dependency_links.txt
+dragonia.egg-info/entry_points.txt
+dragonia.egg-info/requires.txt
+dragonia.egg-info/top_level.txt
