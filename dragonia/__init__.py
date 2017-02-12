@@ -22,5 +22,6 @@ def main(global_config, **settings):
     config.add_route('logout', '/logout')
     config.add_route('create_user', '/create_pet')
     config.add_route('dragonia_main', '/dragonia_main')
+    config.add_route('battle', '/battle/{dragon}/{game_id}')
     config.scan('.views')
     return config.make_wsgi_app()

@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Choose your Dragon</h1>
-<p>${dragon}</p>
-<button type="button">Run Game</button>
+<p>A wild knight appears answering to calls to ${knight_name}. ${knight}</p>
+<a href="${request.route_url('battle', game_id=game_id, dragon='scaly')}">Attack</a>
 </body>
 </html>

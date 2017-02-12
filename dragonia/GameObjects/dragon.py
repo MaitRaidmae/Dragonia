@@ -25,14 +25,11 @@ class Dragon:
 
     @property
     def dragon_json(self):
-        dragon_jsondict = dict()
-        dragon_jsondict['scaleThickness'] = self.dragon_dict['scale_thickness']
-        dragon_jsondict['clawSharpness']  = self.dragon_dict['claw_sharpness']
-        dragon_jsondict['wingStrength']   = self.dragon_dict['wing_strength']
-        dragon_jsondict['fireBreath']     = self.dragon_dict['fire_breath']
+        dragon_jsondict = {
+            'scaleThickness': self.dragon_dict['scale_thickness'],
+            'clawSharpness': self.dragon_dict['claw_sharpness'],
+            'wingStrength': self.dragon_dict['wing_strength'],
+            'fireBreath':   self.dragon_dict['fire_breath']
+        }
         dragon_jsonobj = {'dragon': dragon_jsondict}
         return json.dumps(dragon_jsonobj)
-
-    def attack(self):
-        battle_result = 1
-        return battle_result

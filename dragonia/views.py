@@ -71,11 +71,13 @@ class DragoniaViews:
         dragon_dict = {
             'scale_thickness': 10,
             'claw_sharpness': 5,
-            'wing_strength':  4,
+            'wing_strength': 4,
             'fire_breath': 1
         }
         my_dragon = dragon.Dragon(dragon_dict)
-        print(my_dragon.dragon_json)
-        game = mugloarGame.MugloarGame(my_dragon, self.logged_in)
-        game.run_game()
-        return {'page_title': 'Dragonia', 'dragon': my_dragon.dragon_json}
+        game = mugloarGame.MugloarGame(self.logged_in)
+        game.get_knight()
+        return {'page_title': 'Dragonia',
+                'game_id': game.game_id,
+                'knight_name': game.knight.name,
+                'knight': game.knight.description}
