@@ -1,5 +1,6 @@
 import json
-
+import requests
+from .mugloarGame import MugloarGame
 
 class Dragon:
 
@@ -33,3 +34,11 @@ class Dragon:
         }
         dragon_jsonobj = {'dragon': dragon_jsondict}
         return json.dumps(dragon_jsonobj)
+
+    def attack(self, game_id):
+        solution_url = MugloarGame.get_solution_url(game_id)
+        headers = {
+            'User-Agent': 'Mozilla/5.0',
+            'Content-Type': 'application/json'
+        }
+        return requests.put(solution_url, data=self.dragon_json, headers=headers)

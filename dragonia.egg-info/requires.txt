@@ -5,3 +5,4 @@ sqlalchemy
 pyramid_tm
 zope.sqlalchemy
 requests
+pyramid_debugtoolbar
