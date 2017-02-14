@@ -27,13 +27,13 @@ class Knight:
     @property
     def description(self):
         print(self.knight_dict)
-        if self.armor > 7:
+        if self.armor > 10:
             return "The knight looks to be heavily armoured."
-        elif self.attack > 7:
+        elif self.attack > 10:
             return "The knight looks to be well armed."
-        elif self.agility > 7:
+        elif self.agility > 10:
             return "The knight looks to be quick on his/her feet."
-        elif self.endurance > 7:
+        elif self.endurance > 10:
             return "The knight looks to be very well built."
         else:
             return "The knight looks to be well rounded."

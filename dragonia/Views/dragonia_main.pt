@@ -2,21 +2,10 @@
 <html lang="en">
 <head>
     <title>Dragonia</title>
-    <link href='//fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
-    <link rel="stylesheet"
-          href="${request.static_url('dragonia:static/dragonia.css') }"/>
 </head>
 <body>
-<h1>Weather Forecast</h1>
-<p>${weather}</p>
-<h1>News</h1>
-<p>A wild knight appears answering to calls to ${knight_name}. ${knight}</p>
-
 <h1>Choose your Dragon</h1>
-<a href="${request.route_url('battle', game_id=game_id, dragon='scaly')}">Scaly</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='clawy')}">Clawy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='flamy')}">Flamy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='wingy')}">Wingy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='glaurung')}">Glaurung</a>
+<p>A wild knight appears answering to calls to ${knight_name}. ${knight}</p>
+<a href="${request.route_url('battle', game_id=game_id, dragon='scaly')}">Attack</a>
 </body>
 </html>
