@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <title>Dragonia</title>
+    <link href='//fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="${request.static_url('dragonia:static/dragonia.css') }"/>
 </head>
 <body>
 <h1>Login</h1>

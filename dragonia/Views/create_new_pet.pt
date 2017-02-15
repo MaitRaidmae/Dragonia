@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:tal="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dragonia</title>
+    <link href='//fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="${request.static_url('dragonia:static/dragonia.css') }"/>
+</head>
+<body>
+
+
+<h1>Create new Pet</h1>
+<p class="warning">${message}</p>
+<form method="post">
+
+    <label for="new_pet_name">New Pet Name</label>
+    <input type="text" id="new_pet_name"
+           name="new_pet_name"
+           value="${new_pet_name}"/>
+    <br/>
+    <label for="secret_word">Secret Word</label>
+    <input type="password" id="secret_word"
+           name="secret_word"
+           value="${secret_word}"/>
+    <br/>
+    <label for="repeat_secret_word">Repeat Secret Word</label>
+    <input type="password" id="repeat_secret_word"
+           name="repeat_secret_word"
+           value="${repeat_secret_word}"/>
+    <br/>
+    <input type="submit" name="form.submitted"
+           value="Create New Pet"/>
+</form>
+
+</body>
+</html>
