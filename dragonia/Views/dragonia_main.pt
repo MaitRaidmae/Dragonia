@@ -14,14 +14,19 @@
 
 <h1>Choose your Dragon</h1>
 
+<div class="buttonBox">
 <a href="${request.route_url('battle', game_id=game_id, dragon='Scaly')}"><div class="button">Scaly</div></a>
 <a href="${request.route_url('battle', game_id=game_id, dragon='Clawy')}"><div class="button">Clawy</div></a>
 <a href="${request.route_url('battle', game_id=game_id, dragon='Flamy')}"><div class="button">Flamy</div></a>
 <a href="${request.route_url('battle', game_id=game_id, dragon='Wingy')}"><div class="button">Wingy</div></a>
 <a href="${request.route_url('battle', game_id=game_id, dragon='Glaurung')}"><div class="button">Glaurung</div></a>
+</div>
 
 <div class="explore">
+<div class="buttonBox">
 <a href="${request.route_url('the_den_of_dragons', user_id=user_id)}"><div class="button">Visit the Den</div></a>
+<a href="${request.route_url('logout')}"><div class="button">Leave Dragonia</div></a>
+</div>
 </div>
 </body>
 </html>

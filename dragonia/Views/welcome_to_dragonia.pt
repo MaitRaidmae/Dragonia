@@ -28,10 +28,11 @@
 </form>
 
 <p>${message}</p>
+<div class="buttonBox">
 <a href="${request.route_url('create_new_pet')}"><div class="button">Create New Pet</div></a>
-
 <div class="explore">
     <a href="https://github.com/MaitRaidmae/Dragonia"><div class="button">View Source</div></a>
+</div>
 </div>
 </body>
 </html>

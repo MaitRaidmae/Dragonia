@@ -133,7 +133,7 @@ class DragoniaViews:
                 'fire_breath': 10
             }
         elif selected_dragon == 'Glaurung':
-            dragon_dict = dragon.Dragon.get_glaurung_dict(knight_dict)
+            dragon_dict = dragon.Dragon.get_glaurung_dict(knight_dict,  mugloar_game.weather)
         my_dragon = dragon.Dragon(dragon_dict)
         battleresult_json = my_dragon.attack(mugloar_game_id).text
         battleresult_dict = json.loads(battleresult_json)
@@ -148,7 +148,7 @@ class DragoniaViews:
             dragon_scale_thickness=my_dragon.scale_thickness
         ))
         return {'result': battleresult_dict['status'],
-                'result_text':battleresult_dict['message']}
+                'result_text': battleresult_dict['message']}
 
     @view_config(route_name='create_new_pet', renderer='Views/create_new_pet.pt')
     def create_new_pet(self):
@@ -206,6 +206,14 @@ class DragoniaViews:
                 'best_dragon': best_dragon,
                 'dragon_stats': dragon_stats.values()}
 
+    @view_config(route_name='logout')
+    def logout(self):
+        request = self.request
+        headers = forget(request)
+        url = request.route_url('welcome_to_dragonia')
+        return HTTPFound(location=url,
+                         headers=headers)
+
     @classmethod
     def get_dragon_stats(cls, dragons):
         dragon_stats = dict()
@@ -252,3 +260,4 @@ class DragoniaViews:
                 best_dragon = dragon_name
                 best_successrate = dragon_stats[dragon_name]['success_rate']
         return best_dragon
+

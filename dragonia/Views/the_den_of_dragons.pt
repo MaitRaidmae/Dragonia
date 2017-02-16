@@ -37,7 +37,9 @@
 <h2>Best Dragon</h2>
 <p>${best_dragon}</p>
 <div class="explore">
-<a href="${request.route_url('dragonia_main')}"><div class="button">Return to Dragonia</div></a>
+<div class="buttonBox">
+    <a href="${request.route_url('dragonia_main')}"><div class="button">Return to Dragonia</div></a>
+</div>
 </div>
 </body>
 </html>
