@@ -16,5 +16,5 @@ Basic things you can do:
 * View stats of your Dragons (Visit Dragon Den). Glaurung should achieve over 60% Success Rate at knight Consumations.  
   
 <h1>Disclaimer</h1>
-Please do try to forgive me the visual awfulness of the thing (UI not really my thing).
+Please do try to forgive me the visual awfulness of the thing (Human interfacing skills are a bit lacking).
 
