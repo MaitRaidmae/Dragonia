@@ -1,8 +1,7 @@
 class Knight:
 
     def __init__(self, knight_dict):
-        self.knight_dict     = knight_dict
-        print(knight_dict)
+        self.knight_dict = knight_dict
 
     @property
     def name(self):
@@ -26,7 +25,6 @@ class Knight:
 
     @property
     def description(self):
-        print(self.knight_dict)
         if self.armor > 7:
             return "The knight looks to be heavily armoured."
         elif self.attack > 7:

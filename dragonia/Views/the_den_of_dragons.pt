@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dragonia - The Den</title>
+    <link href='//fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="${request.static_url('dragonia:static/dragonia.css') }"/>
+</head>
+<body>
+<h1>Dragons who consider you to be their pet</h1>
+
+<table>
+    <col width="100">
+    <col width="100">
+    <col width="100">
+    <col width="100">
+    <col width="160">
+<tr>
+    <th align="left">Name</th>
+    <th align="right">Battles</th>
+    <th align="right">Victories</th>
+    <th align="right">Defeats</th>
+    <th align="right">Success Rate</th>
+</tr>
+<tbody>
+<tr tal:repeat="dragon dragon_stats">
+    <td align="left">${dragon.name}</td>
+    <td align="right">${dragon.battles}</td>
+    <td align="right">${dragon.victories}</td>
+    <td align="right">${dragon.defeats}</td>
+    <td align="right">${dragon.success_rate} %</td>
+</tr>
+</tbody>
+</table>
+<h2>Favourite Dragon</h2>
+<p>${favourite_dragon}</p>
+<h2>Best Dragon</h2>
+<p>${best_dragon}</p>
+<div class="explore">
+<a href="${request.route_url('dragonia_main')}"><div class="button">Return to Dragonia</div></a>
+</div>
+</body>
+</html>

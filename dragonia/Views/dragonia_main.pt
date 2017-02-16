@@ -13,10 +13,15 @@
 <p>A wild knight appears answering to calls to ${knight_name}. ${knight}</p>
 
 <h1>Choose your Dragon</h1>
-<a href="${request.route_url('battle', game_id=game_id, dragon='scaly')}">Scaly</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='clawy')}">Clawy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='flamy')}">Flamy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='wingy')}">Wingy</a>
-<a href="${request.route_url('battle', game_id=game_id, dragon='glaurung')}">Glaurung</a>
+
+<a href="${request.route_url('battle', game_id=game_id, dragon='Scaly')}"><div class="button">Scaly</div></a>
+<a href="${request.route_url('battle', game_id=game_id, dragon='Clawy')}"><div class="button">Clawy</div></a>
+<a href="${request.route_url('battle', game_id=game_id, dragon='Flamy')}"><div class="button">Flamy</div></a>
+<a href="${request.route_url('battle', game_id=game_id, dragon='Wingy')}"><div class="button">Wingy</div></a>
+<a href="${request.route_url('battle', game_id=game_id, dragon='Glaurung')}"><div class="button">Glaurung</div></a>
+
+<div class="explore">
+<a href="${request.route_url('the_den_of_dragons', user_id=user_id)}"><div class="button">Visit the Den</div></a>
+</div>
 </body>
 </html>

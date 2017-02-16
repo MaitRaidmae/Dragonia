@@ -10,20 +10,28 @@
 
 
 <h1>Welcome to Dragonia</h1>
+
 <form method="post">
-    <label for="login">Pet Name</label>
-    <input type="text" id="login"
-           name="login"
-           value="${login}"/>
-    <br/>
-    <label for="password">Secret Word</label>
-    <input type="password" id="password"
-           name="password"
-           value="${password}"/>
-    <br/>
-    <input type="submit" name="form.submitted"
+
+    <label class="form_label" for="login">Pet Name</label>
+    <input class="form_input" type="text" id="login"
+               name="login"
+               value="${login}"/>
+    <div>
+        <label class="form_label" for="password">Secret Word</label>
+        <input class="form_input" type="password" id="password"
+               name="password"
+               value="${password}"/>
+    </div>
+    <input class="form_submit" type="submit" name="form.submitted"
            value="Enter Dragonia"/>
 </form>
-<p class="button"><a href="${request.route_url('create_user')}">Create New Pet</a></p>
+
+<p>${message}</p>
+<a href="${request.route_url('create_new_pet')}"><div class="button">Create New Pet</div></a>
+
+<div class="explore">
+    <a href="https://github.com/MaitRaidmae/Dragonia"><div class="button">View Source</div></a>
+</div>
 </body>
 </html>

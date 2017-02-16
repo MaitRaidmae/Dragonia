@@ -4,12 +4,68 @@ h1 {
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
 
-body {
-    background-image: url("parchment.jpg")
+h2 {
+  font: 200 30px/1.3 'Irish Grover', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  text-align: middle;
+  margin-bottom: 5px;
 }
 
-p {
+body {
+    background-image: url("Parchment.jpg")
+}
+
+p, label, a, input {
   font: 300 20px/1.3 'Irish Grover', Helvetica, sans-serif;
   color: #2b2b2b;
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
 }
+
+
+input {
+    background-color: #ba7d01;
+}
+
+.button {
+    background-color: #ba7d01;
+    width: 200px;
+    text-align:center;
+    border-style: outset;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+table {
+  font: 200 20px/1.3 'Irish Grover', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.explore {
+    padding-top: 75px
+}
+
+.form_label {
+    width: 130px;
+    dispay: block;
+    float: left;
+}
+
+.form_input {
+    width: 200px;
+    dispay: inline-block;
+}
+
+.form_submit {
+    margin-top: 10px;
+}
+

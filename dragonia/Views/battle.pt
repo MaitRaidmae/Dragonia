@@ -10,6 +10,6 @@
 <h1>Battle Commences</h1>
 <p>${result}</p>
 <p>${result_text}</p>
-<a href="${request.route_url('dragonia_main')}">Next Day</a>
+<a href="${request.route_url('dragonia_main')}"><div class="button">Rest until the Next Day</div></a>
 </body>
 </html>

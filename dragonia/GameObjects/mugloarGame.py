@@ -54,7 +54,6 @@ class MugloarGame:
             weather_xml = requests.get(weather_url).text
             element = elTree.fromstring(weather_xml)
             forecast = element.find('message').text
-            print(forecast)
             self.weather = forecast
 
 

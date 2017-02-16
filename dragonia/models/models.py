@@ -43,11 +43,6 @@ class User(Base):
     user_id = sa.Column(sa.Text, unique=True)
     password = sa.Column(sa.Text)
 
-    @classmethod
-    def all_users(cls):
-        User = cls
-        return q
-
 
 class Group(Base):
     __tablename__ = 'groups'
@@ -60,7 +55,7 @@ class MugloarGame(Base):
     __tablename__ = 'mugloar_games'
     uid = sa.Column(sa.Integer, primary_key=True)
     game_id = sa.Column(sa.Integer, unique=True)
-    user_uid = foreign_key_column(None, sa.Integer, "users.uid")
+    user_id = foreign_key_column(None, sa.Integer, "users.user_id")
     knight_agility = sa.Column(sa.Integer)
     knight_attack = sa.Column(sa.Integer)
     knight_endurance = sa.Column(sa.Integer)
@@ -70,7 +65,7 @@ class MugloarGame(Base):
 
 class Battle(Base):
     __tablename__ = 'battles'
-    uid =  sa.Column(sa.Integer, primary_key=True)
+    uid = sa.Column(sa.Integer, primary_key=True)
     mugloar_games_uid = foreign_key_column(None, sa.Integer, "mugloar_games.uid")
     result = sa.Column(sa.Text)
     result_text = sa.Column(sa.Text)
