@@ -13,18 +13,18 @@
 <p class="warning">${message}</p>
 <form method="post">
 
-    <label for="new_pet_name">New Pet Name</label>
-    <input type="text" id="new_pet_name"
+    <label class="form_label" for="new_pet_name">New Pet Name</label>
+    <input class="form_input" type="text" id="new_pet_name"
            name="new_pet_name"
            value="${new_pet_name}"/>
     <br/>
-    <label for="secret_word">Secret Word</label>
-    <input type="password" id="secret_word"
+    <label class="form_label" for="secret_word">Secret Word</label>
+    <input class="form_input" class="form_label" type="password" id="secret_word"
            name="secret_word"
            value="${secret_word}"/>
     <br/>
-    <label for="repeat_secret_word">Repeat Secret Word</label>
-    <input type="password" id="repeat_secret_word"
+    <label class="form_label" for="repeat_secret_word">Repeat Secret Word</label>
+    <input class="form_input" type="password" id="repeat_secret_word"
            name="repeat_secret_word"
            value="${repeat_secret_word}"/>
     <br/>
