@@ -13,7 +13,7 @@ This was built in Python 3.5 Don't really know which other Python versions it fu
 Basic things you can do:  
 * Create a new pet/user.
 * Initate a battle and choose a dragon (there are four clumsy ones Flamy, Clawy, Scaly and Wingy - and Glaurung who should be a bit more adept at eating knights).
-* View stats of your Dragons (Visit Dragon Den). Glaurung should achieve over 60% Success Rate at knight Consumations.
+* View stats of your Dragons (Visit Dragon Den). Glaurung should achieve over 60% Success Rate at knight Consumations.  
 <h1>Disclaimer</h1>
 Please do try to forgive me the visual awfulness of the thing (UI not really my thing).
 
